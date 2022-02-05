@@ -1,5 +1,5 @@
 /*==============================================================
-Program:  Mathematica
+Program:  CPU Temperature Monitor
 Version:  0.1.0
 Version Date:  02/05/2022
 Author:  Kevin Wilkins
