@@ -41,10 +41,10 @@ int Thermal()
     ifstream sysThermal ("/sys/class/thermal/thermal_zone0/temp");
 
     // Check if file is open and send information to variable
-    if (systemThermal.is_open())
+    if (sysThermal.is_open())
     {
         // Write output of file to sysTemp variable
-        while (getline (systemThermal,sysTemp))
+        while (getline (sysThermal, sysTemp))
         {
             cin >> sysTemp;
         }
