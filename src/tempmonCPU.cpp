@@ -17,15 +17,15 @@ convert output to human readable format.
 using namespace std;
 
 // Function Prototypes
-int Thermal();
+string Thermal();
 
 // Main function
 int main()
 {
-    int sysTemp = 0;
+    string sysTemp = 0;
 
     // Use Thermal function to get system thermal info
-    Thermal();
+    Thermal(sysTemp);
 
     // Output to human readable format
     cout << "System temperature:  " << sysTemp << "\n\n";
@@ -35,9 +35,8 @@ int main()
 }
 
 // Get thermal information from system
-int Thermal()
+string Thermal(string sysTemp)
 {
-    int sysTemp = 0;
     ifstream sysThermal ("/sys/class/thermal/thermal_zone0/temp");
 
     // Check if file is open and send information to variable
@@ -46,7 +45,7 @@ int Thermal()
         // Write output of file to sysTemp variable
         while (getline (sysThermal, sysTemp))
         {
-            cin >> sysTemp;
+            sysThermal >> sysTemp;
         }
         sysThermal.close();
     }
