@@ -12,7 +12,9 @@ convert output to human readable format.
 
 // Preprocessor directives and namespace usage
 #include <iostream>
+#include <iomanip>
 #include <fstream>
+#include <string>
 
 using namespace std;
 
@@ -22,13 +24,18 @@ string Thermal();
 // Main function
 int main()
 {
-    string sysTemp = 0;
-
+    string sysTemp = 0; // Will store the output of sysThermal
+    
     // Use Thermal function to get system thermal info
     Thermal(sysTemp);
 
     // Output to human readable format
-    cout << "System temperature:  " << sysTemp << "\n\n";
+    double tempHumanRead = 0;
+    double tempLong = stod(sysTemp); // Convert string to double
+    setprecision(3);
+
+    tempHumanRead = tempLong / 1000;
+    cout << "System temperature:  " << tempHumanRead << " \u00B0C\n\n";
     
     // Exit program without errors
     return 0;
@@ -37,17 +44,17 @@ int main()
 // Get thermal information from system
 string Thermal(string sysTemp)
 {
-    ifstream sysThermal ("/sys/class/thermal/thermal_zone0/temp");
+    ifstream thermal ("/sys/class/thermal/thermal_zone0/temp");
 
     // Check if file is open and send information to variable
-    if (sysThermal.is_open())
+    if (thermal.is_open())
     {
         // Write output of file to sysTemp variable
-        while (getline (sysThermal, sysTemp))
+        while (getline (thermal, sysTemp))
         {
-            sysThermal >> sysTemp;
+            thermal >> sysTemp;
         }
-        sysThermal.close();
+        thermal.close();
     }
     else
     {
