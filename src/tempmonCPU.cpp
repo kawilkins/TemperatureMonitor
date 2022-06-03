@@ -1,6 +1,6 @@
 /*==============================================================
 Program:  CPU Temperature Monitor
-Version:  0.1.0
+Version:  0.1.1
 Version Date:  02/05/2022
 Author:  Kevin Wilkins
 Date:  02/05/2022
