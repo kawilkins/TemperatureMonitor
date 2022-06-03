@@ -7,7 +7,8 @@ Date:  02/05/2022
 Parameters:
 This application will read out CPU temperature data from 
 '/sys/class/thermal/thermal_zone0/temp' file on Linux and will
-convert output to human readable format.
+convert output to human readable format in degrees Celsius, 
+degrees Fahrenheit, and Kelvin.
 ==============================================================*/
 
 // Preprocessor directives and namespace usage
@@ -19,40 +20,32 @@ convert output to human readable format.
 using namespace std;
 
 // Function Prototypes
-string Thermal();
+// string Thermal();
 
 // Main function
 int main()
 {
-    string sysTemp = 0; // Will store the output of sysThermal
-    
-    // Use Thermal function to get system thermal info
-    Thermal(sysTemp);
-
-    // Output to human readable format
-    double tempHumanRead = 0;
+    ifstream thermal;
+    string sysTemp = ""; // Will store the output of thermal
     double tempLong = stod(sysTemp); // Convert string to double
-    setprecision(3);
+    double tempCelsius = tempLong / 1000; // Convert output to human readable
+    double tempFahrenheit = tempCelsius * (9/5) + 32; // Convert to Fahrenheit
+    double tempKelvin = tempCelsius + 273.15; // Convert to Kelvin
+    setprecision(3); // Use 3 significant digits
 
-    tempHumanRead = tempLong / 1000;
-    cout << "System temperature:  " << tempHumanRead << " \u00B0C\n\n";
-    
-    // Exit program without errors
-    return 0;
-}
+    // Read in /sys/.../temp file
+    thermal.open ("/sys/class/thermal/thermal_zone0/temp", ios::in);
 
-// Get thermal information from system
-string Thermal(string sysTemp)
-{
-    ifstream thermal ("/sys/class/thermal/thermal_zone0/temp");
-
-    // Check if file is open and send information to variable
+    // Check if file is open and output in human readable format
     if (thermal.is_open())
     {
         // Write output of file to sysTemp variable
         while (getline (thermal, sysTemp))
         {
-            thermal >> sysTemp;
+            // Output to human readable format
+            cout << "   System temperature (Celsius):  " << tempCelsius << " \u00B0C\n"
+                 << "System temperature (Fahrenheit):  " << tempFahrenheit << " \u00B0F\n"
+                 << "    System temperature (Kelvin):  " << tempKelvin << " K\n";
         }
         thermal.close();
     }
@@ -62,5 +55,6 @@ string Thermal(string sysTemp)
              << "Please try again . . .\n\n";
     }
 
-    return sysTemp;
+    // Exit program without errors
+    return 0;
 }
