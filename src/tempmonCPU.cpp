@@ -1,7 +1,7 @@
 /*==============================================================
 Program:  CPU Temperature Monitor
 Version:  0.1.1
-Version Date:  02/05/2022
+Version Date:  06/02/2022
 Author:  Kevin Wilkins
 Date:  02/05/2022
 Parameters:
@@ -18,9 +18,6 @@ degrees Fahrenheit, and Kelvin.
 #include <string>
 
 using namespace std;
-
-// Function Prototypes
-// string Thermal();
 
 // Main function
 int main()
