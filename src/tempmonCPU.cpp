@@ -36,7 +36,6 @@ int main()
     // Check if file is open and output in human readable format
     if (thermal.is_open())
     {
-        // Write output of file to sysTemp variable
         while (getline (thermal, sysTemp))
         {
             // Output to human readable format
@@ -46,7 +45,7 @@ int main()
         }
         thermal.close();
     }
-    else
+    else // File does not open
     {
         cout << "Failure to open '/sys/class/thermal/thermal_zone0/temp'\n"
              << "Please try again . . .\n\n";
