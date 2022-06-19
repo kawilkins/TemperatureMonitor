@@ -31,6 +31,7 @@ int main()
     setprecision(3); // Use 3 significant digits
 
     // Read in /sys/.../temp file
+    // Point read pointer to beginning of file
     thermal.open ("/sys/class/thermal/thermal_zone0/temp", ios::in);
 
     // Check if file is open and output in human readable format
