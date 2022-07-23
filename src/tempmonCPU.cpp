@@ -24,10 +24,6 @@ int main()
 {
     ifstream thermal;
     string sysTemp = ""; // Will store the output of thermal
-    double tempLong = stod(sysTemp); // Convert string to double
-    double tempCelsius = tempLong / 1000; // Convert output to human readable
-    double tempFahrenheit = tempCelsius * (9/5) + 32; // Convert to Fahrenheit
-    double tempKelvin = tempCelsius + 273.15; // Convert to Kelvin
     setprecision(3); // Use 3 significant digits
 
     // Read in /sys/.../temp file
@@ -39,10 +35,16 @@ int main()
     {
         while (getline (thermal, sysTemp))
         {
+            // Convert output
+            double tempLong = stod(sysTemp); // Convert string to double
+            double tempCelsius = tempLong / 1000; // Convert output to human readable
+            double tempFahrenheit = (tempCelsius * 1.8) + 32; // Convert to Fahrenheit
+            double tempKelvin = tempCelsius + 273.15; // Convert to Kelvin
+            
             // Output to human readable format
-            cout << "   System temperature (Celsius):  " << tempCelsius << " \u00B0C\n"
-                 << "System temperature (Fahrenheit):  " << tempFahrenheit << " \u00B0F\n"
-                 << "    System temperature (Kelvin):  " << tempKelvin << " K\n";
+            cout << "System temperature:  " << tempCelsius << " \u00B0C\n"
+                 << "                     " << tempFahrenheit << " \u00B0F\n"
+                 << "                     " << tempKelvin << " K\n";
         }
         thermal.close();
     }
