@@ -1,12 +1,19 @@
 # TemperatureMonitor
+## Release v0.1.2-stable
+First release on 07/23/2022.
+
+<hr>
+
 ## What does it do?
 Reads system temperature from `/sys/class/thermal/thermal_zone0/temp` and outputs to human readable format.  This is a terminal based application is intended for Linux computer systems and will not work on Windows or Macintosh computer systems.
 
 Please report issues.
 
+This software is FREE and open source.  Therefore there is NO COST to download and use this software.  If you would like to support my work and appreciate this application you may contribute to my *Buy Me a Coffee* page: https://www.buymeacoffee.com/kwilkins
+
 <hr>
 
-## Installation
+## Manual Installation
 It is easy to install by using the following commands in terminal:
 
 **Make a hidden directory in your user's home directory**
@@ -33,4 +40,5 @@ Then run the following command to refresh your BASH session:
 ```
 source ~/.bashrc
 ```
+
 <hr>
