@@ -14,7 +14,7 @@ This software is FLOSS (Free/libre and open source).  Therefore there is NO COST
 <hr>
 
 ## Quick setup
-It is easy to install by using the following commands in terminal:
+
 **Download binary from github**
 ```
 curl https://github.com/kawilkins/TemperatureMonitor/releases/latest > tempmon

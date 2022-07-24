@@ -43,7 +43,7 @@ git clone https://github.com/kawilkins/TemperatureMonitor.git
 ```
 **change directory and then compile it**
 ```
-cd TemperatureMonitor
+cd TemperatureMonitor/src
 g++ -o tempmon tempmonCPU.cpp
 ```
 Additionally you may want to move the complied binary to ```/usr/bin```
