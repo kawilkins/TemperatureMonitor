@@ -17,7 +17,7 @@ This software is FLOSS (Free/libre and open source).  Therefore there is NO COST
 
 **Download binary from github**
 ```
-curl https://github.com/kawilkins/TemperatureMonitor/releases/latest > tempmon
+curl https://github.com/kawilkins/TemperatureMonitor/releases/download/v0.1.2-stable/tempmon > tempmon
 ```
 
 **Make it executable**
@@ -26,7 +26,7 @@ chmod +x tempmon
 ```
 **Move it to ```/usr/bin```**
 ```
-mv tempmon /usr/bin
+sudo mv tempmon /usr/bin
 ```
 **Test it out**
 ```
