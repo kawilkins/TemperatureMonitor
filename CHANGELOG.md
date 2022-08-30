@@ -1,3 +1,29 @@
-# v0.2.1
-## CHANGELOG.md
-- Added change log
+- Update CHANGELOG.md
+- Update CHANGELOG.md
+- Adding changelog.
+- Merge branch 'Darin755/master' Merging and approving proposed change to README.md with edit to FOSS definition.
+- Remove "FLOSS". Add FOSS and definition.
+- Delete README.md.backup
+- Update README.md
+- Update README.md
+- fixed formating
+- improved readme
+- Add release information.
+- Corrected version date.
+- Updated project description. Add guide to installation.
+- Corrected version date.
+- Moved temperature conversion variables to while loop. Remove 'tempFahrenheit = tempCelsius * (9/5) + 32'. Add 'tempFahrenheit = (tempCelsius * 1.8) + 32'
+- Created GNU General Public License version 3 (GPLv3). Removed template information. Added program name. Added program description.
+- Added comment before thermal.open() function. Compiled and test run. Program compiled but failed to run.
+- Added comment before thermal.open() function. Attempted debug and received error:
+- Removed unnecessary comments. Cleaned up code spacing.
+- Corrected version number in description.
+- Determined that separate function was overkill. Merged operation into main(). Removed Thermal() function. Added variables to output system temp data to:  * Degrees Celsius  * Degrees Fahrenheit  * Kelvin Added 'ios::in' to thermal.open() correcting syntax error.
+- Added statement to convert string to double. Added statement to divide temperature output and store result in variable to be output to the screen in degrees C. Added iomanip and string libraries.
+- Corrected syntax errors.
+- Corrected variable syntax error.
+- Created function for fetching information from /sys/class/thermal/thermal_zone0/temp.
+- Updated application name.
+- Added new file tempmonCPU.cpp.
+- Delete LICENSE
+- Initial commit
