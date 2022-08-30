@@ -1,5 +1,4 @@
 # TemperatureMonitor
-[CHANGELOG.md](https://github.com/kawilkins/TemperatureMonitor/files/9456391/CHANGELOG.md)
 ## Release v0.1.2-stable
 First release on 07/23/2022.
 
