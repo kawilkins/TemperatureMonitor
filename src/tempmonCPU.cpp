@@ -24,7 +24,7 @@ int main()
 {
     ifstream thermal;
     string sysTemp = ""; // Will store the output of thermal
-    setprecision(3); // Use 3 significant digits
+    cout << fixed << setprecision(3); // Use 3 significant digits
 
     // Read in /sys/.../temp file
     // Point read pointer to beginning of file
