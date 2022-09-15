@@ -1,7 +1,7 @@
 /*==============================================================
 Program:  CPU Temperature Monitor
-Version:  0.1.2
-Version Date:  07/22/2022
+Version:  0.2.1
+Version Date:  09/15/2022
 Author:  Kevin Wilkins
 Date:  02/05/2022
 Parameters:
@@ -24,8 +24,7 @@ int main()
 {
     ifstream thermal;
     string sysTemp = ""; // Will store the output of thermal
-    cout << fixed << setprecision(3); // Use 3 significant digits
-
+    
     // Read in /sys/.../temp file
     // Point read pointer to beginning of file
     thermal.open ("/sys/class/thermal/thermal_zone0/temp", ios::in);
@@ -42,9 +41,11 @@ int main()
             double tempKelvin = tempCelsius + 273.15; // Convert to Kelvin
             
             // Output to human readable format
-            cout << "System temperature:  " << tempCelsius << " \u00B0C\n"
-                 << "                     " << tempFahrenheit << " \u00B0F\n"
-                 << "                     " << tempKelvin << " K\n";
+            cout << fixed << setprecision(3); // Use 3 significant digits
+            cout << "System temperature:  \n"
+                 << setw(10) << right << tempCelsius << " \u00B0C\n"
+                 << setw(10) << right << tempFahrenheit << " \u00B0F\n"
+                 << setw(10) << right << tempKelvin << "  K\n";
         }
         thermal.close();
     }
