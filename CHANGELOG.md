@@ -1,4 +1,10 @@
-- Remove excessive and unnecessary comments. Add definition for double line spacing. Add definition for color formatting. Remove unnecessary variable that converted string to double. Simplified Celsius conversion. Formatted spacing and alignment of output. Add evaluation of temperature data and corresponding text color. Add status output. Add message to user.
+- Remove excessive and unnecessary comments.
+- Add definition for double line spacing.
+- Add definition for color formatting.
+- Remove unnecessary variable that converted string to double.
+- Simplified Celsius conversion. Formatted spacing and alignment of output.
+- Add evaluation of temperature data and corresponding text color.
+- Add status output. Add message to user.
 - Improved formatting of output using 'setw()' and 'right' manipulators from iomanip.
 - Add "fixed" precision to output.
 - Update README.md
@@ -8,7 +14,8 @@
 - Update CHANGELOG.md
 - Adding changelog.
 - Merge branch 'Darin755/master' Merging and approving proposed change to README.md with edit to FOSS definition.
-- Remove "FLOSS". Add FOSS and definition.
+- Remove "FLOSS".
+- Add FOSS and definition.
 - Delete README.md.backup
 - Update README.md
 - Update README.md
