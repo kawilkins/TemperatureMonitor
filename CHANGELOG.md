@@ -1,3 +1,9 @@
+- Remove excessive and unnecessary comments. Add definition for double line spacing. Add definition for color formatting. Remove unnecessary variable that converted string to double. Simplified Celsius conversion. Formatted spacing and alignment of output. Add evaluation of temperature data and corresponding text color. Add status output. Add message to user.
+- Improved formatting of output using 'setw()' and 'right' manipulators from iomanip.
+- Add "fixed" precision to output.
+- Update README.md
+- Update README.md
+- Updated change log.
 - Update CHANGELOG.md
 - Update CHANGELOG.md
 - Adding changelog.
