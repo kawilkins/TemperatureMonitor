@@ -1,14 +1,14 @@
 #!/bin/bash
 
-FILE=tempmonTEST.cpp
+TESTFILE=tempmonTEST.cpp
+SOURCE=../src/tempmon.cpp
 
-cp ../src/tempmon.cpp tempmonTEST.cpp
+cp $SOURCE tempmonTEST.cpp
 
-if [ -f $FILE ]; then
-    printf "\n\e[1;32mtempmonTEST.cpp created . . . \n\e[0m"
-    g++ -o tempmonTEST $FILE
-    printf "\n\n"
+if [ -f $TESTFILE ]; then
+    g++ $TESTFILE --verbose -o tempmonTEST
+    printf "\n\n\e[1;32mtempmonTEST.cpp created . . . \n\e[0m"
 else
-    printf "\n\e[1;33mtempmonTEST.cpp does not exist.\e[0m"
+    printf "\n\e[1;31mtempmonTEST.cpp does not exist.\e[0m"
     printf "\nPlease try again.\n\n"
 fi
