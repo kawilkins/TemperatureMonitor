@@ -6,9 +6,13 @@
 
 # Releases
 
+## `v0.2.1-stable`
+
+* Added color coding of temperature levels
+
 ## `v0.1.2-stable`
 
-* First release on 07/23/2022.
+* First release on 07/23/2022
 
 <hr>
 
@@ -33,7 +37,7 @@ This software is FOSS (Free and Open Source Software).  Therefore there is NO CO
 
 **Download binary from github**
 ```
-wget https://github.com/kawilkins/TemperatureMonitor/releases/download/v0.1.2-stable/tempmon
+wget https://github.com/kawilkins/TemperatureMonitor/releases/download/v0.2.1-stable/tempmon
 ```
 
 **Make it executable**
