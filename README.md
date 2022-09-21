@@ -21,9 +21,13 @@ This software is FOSS (Free and Open Source Software).  Therefore there is NO CO
 
 <hr>
 
-# Screenshot
+# Screenshots
 
-![Preview](https://raw.githubusercontent.com/kawilkins/TemperatureMonitor/0.2.1/screenshots/tempmon-preview.png)
+![Preview](https://raw.githubusercontent.com/kawilkins/TemperatureMonitor/0.2.1/screenshots/tempmon-preview01.png)
+
+![Preview](https://raw.githubusercontent.com/kawilkins/TemperatureMonitor/0.2.1/screenshots/tempmon-preview02.png)
+
+![Preview](https://raw.githubusercontent.com/kawilkins/TemperatureMonitor/0.2.1/screenshots/tempmon-preview03.png)
 
 # Quick setup
 
