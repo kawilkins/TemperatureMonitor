@@ -41,7 +41,10 @@ int main()
         while (getline (thermal, sysTemp))
         {
             // Convert output
-            double tempCelsius = stod(sysTemp) / 1000;
+            // double tempCelsius = stod(sysTemp) / 1000;
+            
+            double tempCelsius = 87; //Test value
+
             double tempFahrenheit = (tempCelsius * 1.8) + 32;
             double tempKelvin = tempCelsius + 273.15;
             string colorCode = "";
