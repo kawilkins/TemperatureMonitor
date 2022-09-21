@@ -1,10 +1,21 @@
-- Remove excessive and unnecessary comments.
-- Add definition for double line spacing.
-- Add definition for color formatting.
-- Remove unnecessary variable that converted string to double.
-- Simplified Celsius conversion. Formatted spacing and alignment of output.
-- Add evaluation of temperature data and corresponding text color.
-- Add status output. Add message to user.
+- Updated README with current release information.
+- Merge branch '0.2.1'
+- Updated README with screen shots showing results from testing.
+- Verified test data to ensure proper color code thresholds.
+- Changed script to simply check for a test file and compile instead of copying and compiling the same base file all the time.
+- Add screen shots.
+- Changed order of commands in script.
+- Add testing application.
+- Change name of testing script.
+- Renamed tempmonCPU.cpp -> tempmon.cpp.
+- Add test script to download and compile cpp file.
+- Add center alignment to program title. Update program description to include temperature units output. Add section for release descriptions. Add screenshot preview.
+- Add screen shot of output.
+- Updated LICENSE with correct wording.
+- Updated LICENSE with correct wording.
+- Updated change log with recent commit.
+- Updated change log with recent commit.
+- Remove excessive and unnecessary comments. Add definition for double line spacing. Add definition for color formatting. Remove unnecessary variable that converted string to double. Simplified Celsius conversion. Formatted spacing and alignment of output. Add evaluation of temperature data and corresponding text color. Add status output. Add message to user.
 - Improved formatting of output using 'setw()' and 'right' manipulators from iomanip.
 - Add "fixed" precision to output.
 - Update README.md
@@ -14,8 +25,7 @@
 - Update CHANGELOG.md
 - Adding changelog.
 - Merge branch 'Darin755/master' Merging and approving proposed change to README.md with edit to FOSS definition.
-- Remove "FLOSS".
-- Add FOSS and definition.
+- Remove "FLOSS". Add FOSS and definition.
 - Delete README.md.backup
 - Update README.md
 - Update README.md
