@@ -1,3 +1,6 @@
+- Updated syntax to standard. Remove 'using namespace std;'. Remove unnecessary white space around '{}'.
+- Removed Test directory. Created TEST branch.
+- Updated change log.
 - Updated README with current release information.
 - Merge branch '0.2.1'
 - Updated README with screen shots showing results from testing.
