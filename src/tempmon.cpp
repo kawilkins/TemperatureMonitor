@@ -1,7 +1,7 @@
 /*==============================================================
 Program:  CPU Temperature Monitor
 Version:  0.2.2
-Version Date:  09/06/2022
+Version Date:  01/08/2023
 Author:  Kevin Wilkins
 Date:  02/05/2022
 Parameters:
