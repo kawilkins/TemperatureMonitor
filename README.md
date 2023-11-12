@@ -21,7 +21,7 @@ Reads system temperature from `/sys/class/thermal/thermal_zone0/temp` and output
 
 Please report issues.
 
-This software is FOSS (Free and Open Source Software).  Therefore there is NO COST to download and use this software.  If you would like to support my work you can [Buy Me a Coffee](https://www.buymeacoffee.com/kwilkins).
+This software is FOSS (Free and Open Source Software).  Therefore there is NO COST to download and use this software.
 
 <hr>
 
