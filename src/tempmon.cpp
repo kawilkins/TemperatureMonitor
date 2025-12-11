@@ -1,15 +1,15 @@
-/*==============================================================
-Program:  CPU Temperature Monitor
-Version:  0.2.2
-Version Date:  01/08/2023
-Author:  Kevin Wilkins
-Date:  02/05/2022
-Parameters:
-This application will read out CPU temperature data from
-'/sys/class/thermal/thermal_zone0/temp' file on Linux and will
-convert output to human readable format in degrees Celsius, 
-degrees Fahrenheit, and Kelvin.
-==============================================================*/
+/*
+ * @file tempmon.cpp
+ * @author Kevin Wilkins <kwilkinsrd@gmail.com>
+ * @date 02/05/2022
+ * @version 0.2.2
+ * @brief Temperature monitor
+ *
+ * This application will read out CPU temperature data from
+ * '/sys/class/thermal/thermal_zone0/temp' file on Linux and will
+ * convert output to human readable format in degrees Celsius, 
+ * degrees Fahrenheit, and Kelvin.
+ */
 
 // Preprocessor directives and namespace usage
 #include <iostream>
